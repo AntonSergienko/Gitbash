@@ -1,0 +1,55 @@
+1) pwd - показывает где я, начальный каталог диск С.
+cd D:/qatest - перейти на  диск D где qatest рабочая папка.
+
+2) mkdir - qa_1 - создаем папку в папке qatest.
+
+3) cd D:/qatest/qa_1 - переход в папку qa_1.
+
+4)  mkdir qa_11 qa_12 qa_13 - создание нескольких папок.
+
+5) cd D:/qatest/qa_1/qa_11 - заходим в любую папку в моем случае qa_11.
+
+6) touch 1.txt 2.txt 3.txt 1.json 2.json - создание трех txt и два json файлов.
+
+7) mkdir qa_111 qa_222 qa_333 - создание еще трех папок в даной папке qa_11
+
+8) ls -f   - показывает файлы в папке
+
+9,10,11,12)  vim 1.txt  >  ESQ  >  :wq -редактируем файл,выходим из режима редактирования,выходим из vim.
+
+13) mv qa_11/ 1.json 2.json qa_111 - файлы json из qa_11 перемещаем в папку
+qa_111
+
+14) cp qa_11/ 1.txt 2.txt 3.txt qa_111 - копия наших txt файлов из qa_11
+в qa_111
+
+15) find . -name "*txt" - находим все наши файлы с расширением txt
+
+16, 17, 18) cat 1.txt - видим некий текст в раннее редактируемом файле 1.txt,
+grep txt 1.txt - ищем текст в определенном файле
+grep -i txt 1.txt - если в тексте были большие буквы
+grep или grep -v + содержимое + имя файла - выводим содержимое с или без совпадения строк
+
+
+19) less 1.txt - посмотреть содержимое длинного файла и поиск по словам
+
+20)  date +"%d-%m-%y" - 10-04-22 выводим дату 
+     date +"%H-%M"   - время где HM - большими буквами
+
+Задание со звездой
+
+1)  curl http://162.55.220.72:5005/terminal-hw-request - запрос
+
+Ответ  -  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   3172      0 --:--:-- --:--:-- --:--:--  3246{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+
+2) getconf ARG_MAX - выставляем максимальное количество цепочек
+
+
+
+
+
+
+
